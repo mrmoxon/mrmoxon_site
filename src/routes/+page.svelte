@@ -1,8 +1,11 @@
 <script>
-  // Page-specific JavaScript here
+  import { onMount } from 'svelte';
+  onMount(() => {
+    window.location.href = '/about';
+  });
 </script>
 
-<h1>Home</h1>
+<h1></h1>
 
 <style>
   h1 {
@@ -15,3 +18,4 @@
     color: #666;
   }
 </style>
+

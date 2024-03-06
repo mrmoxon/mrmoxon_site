@@ -17,6 +17,12 @@
     { title: "Myths, Memes and Uncertainty", date: "Jul 2022", url: "/essays/myths-memes-uncertainty" },
   ];
 
+  let recommendations = [
+    { title: "Live Long Enough to Live Forever", url: "/essays/dont-die" },
+    { title: "Myths, Memes & Uncertainty", url: "/essays/myths-memes-uncertainty" },
+    { title: "The Holy Grail of Invention", url: "/essays/holy-grail" }
+  ];
+
 </script>
 
 <div class="central-column">
@@ -38,9 +44,9 @@
 
   <p class="recommendation">
     If you're not sure which to read, try 
-    <a href="/essays/dont-die" class="essay-recommendation-link">Live Long Enough to Live Forever</a>, 
-    <a href="/essays/myths-memes-uncertainty" class="essay-recommendation-link">Myths, Memes & Uncertainty</a>, or 
-    <a href="/essays/holy-grail" class="essay-recommendation-link">The Holy Grail of Invention</a>.
+    {#each recommendations as { title, url }, index}
+      <a href={url} class="essay-recommendation-link">{title}</a>{index < recommendations.length - 1 ? ', ' : '.'}
+    {/each}
   </p>
 
   <div class="essays-container">
@@ -167,6 +173,15 @@
   .essay-link:hover .essay-title, .essay-link:hover .essay-date,
   .featured-essay-link:hover .essay-title, .featured-essay-link:hover .essay-date {
     color: #a48267; /* Lighter text color on hover */
+  }
+
+  .essay-recommendation-link {
+    color: #613b16 !important; /* Brown */
+    text-decoration: none !important;
+  }
+
+  .essay-recommendation-link:hover {
+    text-decoration: underline !important; /* Underline on hover for better UX */
   }
   
 </style>
