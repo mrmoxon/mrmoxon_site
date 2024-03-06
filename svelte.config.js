@@ -6,7 +6,7 @@ const config = {
 	kit: {
 		// other options...
 		paths: {
-			base: '/mrmoxon.github.io', // replace 'myrepo' with your GitHub repository name
+			base: '', // replace 'myrepo' with your GitHub repository name
 		},
 		adapter: adapter({
 			pages: 'docs', // Output to 'docs' directory instead of 'build'
