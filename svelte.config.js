@@ -9,8 +9,8 @@ const config = {
 			base: '', // replace 'myrepo' with your GitHub repository name
 		},
 		adapter: adapter({
-			pages: 'build', // Output to 'docs' directory instead of 'build'
-			assets: 'build',
+			pages: 'docs', // Output to 'docs' directory instead of 'build'
+			assets: 'docs',
 			fallback: null,
 			strict: false
 		}),
