@@ -5,9 +5,10 @@ const config = {
 	preprocess: vitePreprocess(),
 	kit: {
 		adapter: adapter({
-			pages: 'build',
-			assets: 'build',
-			fallback: 'index.html' // Add this line for SPA behavior
+			pages: 'docs', // Output to 'docs' directory instead of 'build'
+			assets: 'docs',
+			fallback: null,
+			strict: false
 		}),
 	}
 };
