@@ -4,10 +4,6 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 const config = {
 	preprocess: vitePreprocess(),
 	kit: {
-		// other options...
-		paths: {
-			base: '', // replace 'myrepo' with your GitHub repository name
-		},
 		adapter: adapter({
 			pages: 'docs', // Output to 'docs' directory instead of 'build'
 			assets: 'docs',
