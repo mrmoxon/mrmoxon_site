@@ -10,7 +10,7 @@ export default {
     }),
     // Ensure paths are relative for GitHub Pages
     paths: {
-      base: process.env.NODE_ENV === 'production' ? '/blog-olympia' : '',
+      base: process.env.NODE_ENV === 'production' ? '/' : '',
     },
     // Other configurations...
   },
